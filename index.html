@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,14 +14,56 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
      <!-- custom styles -->
      <style>
         .font-lato{
             font-family: 'Lato', sans-serif;
         }
      </style>
+
+     <!-- border-solid border-2 border-sky-500 -->
 </head>
 <body class="font-lato">
-    
+    <header class="w-11/12 mx-auto">
+        <!-- navbar for large screens -->
+        <nav>
+            <div class="hidden lg:flex justify-around navbar rounded-full bg-error text-white">
+                <ul class="flex gap-5 font-medium text-base">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Shop</li>
+                    <li>All Fruits</li>
+                </ul>
+
+                <div class="flex gap-3">
+                    <img src="./images/logo.png" alt="">
+                    <h1 class="font-bold text-4xl">Fruit Burst</h1>
+                </div>
+
+                <div class="flex">
+                    <input type="text" placeholder="Search here" class="input rounded-full"/>
+                    <i class="fa-solid fa-magnifying-glass text-black -ml-10"></i>
+                </div>
+            </div>
+
+            <!-- navbar for medium and small screens -->
+            <div class="flex navbar justify-between lg:hidden">
+                
+                <div class="flex gap-3">
+                    <img src="./images/logo.png" alt="">
+                    <h1 class="font-bold text-xl">Fruit Burst</h1>
+                </div>
+
+                <div>
+                  <button class="btn btn-square btn-ghost">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                  </button>
+                </div>
+              </div>
+        </nav>
+    </header>
 </body>
 </html>
